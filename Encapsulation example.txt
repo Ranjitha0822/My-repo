@@ -1,0 +1,41 @@
+class AccountHolder
+{
+   private int AccountNumber;
+   private String AccountHoldername;
+   private float bal;
+
+   //insted of setter here we using constructor
+   public AccountHolder(int AccountNumber,String AccountHoldername,float bal)
+   {
+     this.AccountNumber=AccountNumber;
+     this.AccountHoldername=AccountHoldername;
+     this.bal=bal;
+
+   }
+   public int getAccountNumber()
+   {
+      return AccountNumber;
+   }
+   public String getAccountHoldername()
+   {
+     return AccountHoldername;
+   }
+   public float getbal()
+   {
+     return bal;
+   }
+}
+   public class Program{
+    public static void main(String args[])
+    {
+        
+        AccountHolder c = new AccountHolder(076723456,"Ranjitha",100000);
+        System.out.println(c.getAccountNumber());
+        System.out.println(c.getAccountHoldername());
+        System.out.println(c.getbal());
+
+
+    }
+   }
+
+
